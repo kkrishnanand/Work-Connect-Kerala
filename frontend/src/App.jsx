@@ -14,6 +14,7 @@ import PostJob from "./pages/PostJob"
 import MyJobs from "./pages/MyJobs"
 import Applicants from "./pages/Applicants"
 import Footer from "./components/Footer"
+import Profile from "./pages/Profile";
 
 
 function App() {
@@ -60,6 +61,8 @@ function App() {
           path="/applicants/:jobId"
           element={<Applicants />}
         />
+
+        <Route path="/profile" element={<Profile />} />
 
       </Routes>
 

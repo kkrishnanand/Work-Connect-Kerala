@@ -1,3 +1,4 @@
+
 from django.conf import settings
 from django.db import models
 
@@ -30,9 +31,16 @@ class Application(models.Model):
         default="pending",
     )
 
-    applied_at = models.DateTimeField(
-        auto_now_add=True
+
+    worker_confirmed_completion = models.BooleanField(
+        default=False
     )
+
+    employer_confirmed_completion = models.BooleanField(
+        default=False
+    )
+
+    applied_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         constraints = [

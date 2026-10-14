@@ -25,3 +25,17 @@ dist/
 # OS
 .DS_Store
 Thumbs.db
+
+
+# WorkConnect Kerala - Django uploaded files
+backend/media/
+
+# Python virtual environment
+backend/venv/
+
+# Frontend environment files
+frontend/.env
+frontend/.env.*
+
+# Production secrets
+*.pem
